@@ -1,0 +1,15 @@
+﻿@model List<DrugType>
+@{
+    ViewData["Title"] = "Drug";
+}
+<h1> Drug Types</h1>
+<ul>
+
+    @{ foreach(DrugType drugType in Model)
+            {
+                <li>DrugType:@drugType.Name</li>
+            }
+
+    }
+
+</ul>
